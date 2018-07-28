@@ -1,4 +1,3 @@
-
 # things we need for NLP
 import nltk
 #nltk.download('punkt')
