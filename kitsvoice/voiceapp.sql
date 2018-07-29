@@ -21,6 +21,9 @@ SET time_zone = "+00:00";
 --
 -- Database: `voiceapp`
 --
+DROP DATABASE `voiceapp`;
+CREATE DATABASE `voiceapp`;
+USE `voiceapp`;
 
 -- --------------------------------------------------------
 
