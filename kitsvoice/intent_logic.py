@@ -121,11 +121,6 @@ def bow(sentence, words, show_details=False):
 
     return(np.array(bag))
 
-p = bow("I want to know the status of my order dnumber", words)
-print (p)
-print (classes)
-print(model.predict([p]))
-
 # dump all data
 import pickle
 pickle.dump( {'words':words, 'classes':classes, 'train_x':train_x, 'train_y':train_y}, open( "training_data", "wb" ) )
