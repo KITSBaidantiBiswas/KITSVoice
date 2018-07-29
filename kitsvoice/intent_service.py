@@ -45,11 +45,6 @@ classes = data['classes']
 train_x = data['train_x']
 train_y = data['train_y']
 
-# import our chat-bot intents file
-import json
-with open('intents.json') as json_data:
-    intents = json.load(json_data)
-
 # Build neural network
 net = tflearn.input_data(shape=[None, len(train_x[0])])
 net = tflearn.fully_connected(net, 8)
