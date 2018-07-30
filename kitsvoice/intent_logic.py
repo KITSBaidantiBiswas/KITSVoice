@@ -2,7 +2,12 @@
 import nltk
 nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
-stemmer = LancasterStemmer()
+from nltk.stem.porter import PorterStemmer
+from nltk.stem.snowball import SnowballStemmer
+
+#stemmer = LancasterStemmer()
+#stemmer = PorterStemmer()
+stemmer = SnowballStemmer("english")
 
 # things we need for Tensorflow
 import numpy as np
